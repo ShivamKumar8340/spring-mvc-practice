@@ -32,5 +32,8 @@ public class EmployeeController {
 		
 		return "redirect:/";
 		
+		// if we want to return success page than return
+		// return "success";
+		
 	}
 }
