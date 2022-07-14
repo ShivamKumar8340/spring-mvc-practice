@@ -13,7 +13,7 @@ import com.sunglowsys.domain.Student;
 public class HomeController {
 	
 	
-	// this method is use for provide same header in all view page by @ModelAttribute
+	// this method is use for provide same data  in all view page by @ModelAttribute
 	
 	@ModelAttribute
 	public void commonDataforModel(Model m) {
@@ -91,6 +91,8 @@ public class HomeController {
 	 */	
 	@RequestMapping(path = "/processform" ,method = RequestMethod.POST)
 	public String handleForm(@ModelAttribute Student student , Model model) {
+		
+		System.out.println("this is processurl");
 	// this is return view page by which we can see out in the browser
 	return"success";
 
